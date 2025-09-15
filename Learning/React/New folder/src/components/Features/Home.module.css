@@ -1,0 +1,29 @@
+@media screen and (max-width:856px) {
+
+    .cardsdiv {
+        background-image: url("../../assets/logos/homeicons/back.jpg") ;
+        flex-direction: row;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        flex-wrap: wrap;
+        display: flex;
+        height: 100%;        
+        justify-content: space-around;
+
+
+    }
+
+    .carder {
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 20vh;
+        margin: 20px;
+    }
+
+
+
+}

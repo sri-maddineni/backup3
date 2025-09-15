@@ -1,0 +1,16 @@
+@media screen and (max-width:856px){
+    .author{
+        display: flex;
+        
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .author img{
+        margin: 5%;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+}
