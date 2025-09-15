@@ -1,0 +1,47 @@
+
+^
+GCommand Prompt
+at java.base/sun.security.tools.keytool.Main.doCommands (Main.java:1101)
+at java.base/sun.security.tools.keytool.Main.run(Main.java:416)
+at java.base/sun.security.tools.keytool.Main.main(Main.java:409)
+X
+Caused by: java.security. UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used duri ng decryption.
+... 6 more
+C:\Users\sriha\.android>keytool -alias androiddebugkey -keystore C:\Users\sriha\.android\debug.keystore -list -v
+Enter keystore password:
+keytool error: java.io.IOException: keystore password was incorrect
+java.io.IOException: keystore password was incorrect
+at java.base/sun.security.pkcs12. PKCS12KeyStore.engineLoad (PKCS12KeyStore.java:2158)
+at java.base/sun.security.util.KeyStoreDelegator.engineLoad(KeyStoreDelegator.java:226)
+at java.base/java.security.KeyStore.load(KeyStore.java:1503)
+at java.base/sun.security.tools.keytool.Main.doCommands (Main.java:1101)
+at java.base/sun.security.tools.keytool.Main.run(Main.java:416)
+at java.base/sun.security.tools.keytool.Main.main(Main.java:409)
+Caused by: java.security. UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used duri ng decryption.
+6 more
+C:\Users\sriha\.android>keytool -alias androiddebugkey -keystore C:\Users\sriha\.android\debug.keystore -list -v
+Enter keystore password:
+Alias name: androiddebugkey Creation date: 17-Apr-2022 Entry type: PrivateKeyEntry Certificate chain length: 1 Certificate[1]:
+Owner: C=US, O=Android, CN-Android Debug
+Issuer: C=US, O=Android, CN Android Debug
+Serial number: 1
+Valid from: Sun Apr 17 14:25:48 IST 2022 until: Tue Apr 09 14:25:48 IST 2052
+Certificate fingerprints:
+SHA1: F5:EA:E8:6C:27:0E:AC:3E:7F:67:4C:A2:D5:B0:33:F2:41:A5:CC:A9
+SHA256: 6E:30:17:21:A6:7D:33:67:CE:7D:03:EB:88:ED:34:9C:EF:24:CB:F3:32:FF:A8:D3:F8:98:74:05:1A:CC:57:A6
+Signature algorithm name: SHA1withRSA (weak)
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 1
+Warning:
+The certificate uses the SHA1withRSA signature algorithm which is considered a security risk. This algorithm will be disabled in a future update.
+C:\Users\sriha\.android>_
+Type here to search
+о
+I
+Et
+L O
+A
+22:32
+29°C Partly cloudy ^
+4 ENG
+03-10-2022
