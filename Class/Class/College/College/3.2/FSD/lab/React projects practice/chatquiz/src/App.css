@@ -1,0 +1,28 @@
+.app {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.question-count {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.question-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.answer-section button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.score-section {
+  font-size: 24px;
+  margin-bottom: 20px;
+}

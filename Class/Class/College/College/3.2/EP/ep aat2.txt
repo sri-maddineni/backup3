@@ -1,0 +1,12 @@
+Ep ass 2 questions 
+
+1.diagramaticallly illustrate and discuss about architecture of enterprise java bean
+2.draw lifecycle of entity bean and explain it with the help of program
+3.discuss message driven bean with simple example
+4.discuss session beans with example
+5.a.explain jsf and 
+5.b. Explain jsf core tags with an example
+
+
+
+

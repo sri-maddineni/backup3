@@ -1,0 +1,33 @@
+.scoresec{
+  margin: 15px;
+  font-size: 25px;
+  color: blue;
+}
+
+.qtext{
+
+  color: red;
+  font-size: 25px;
+  margin: 10px;
+
+}
+
+.asec button{
+  color: rgb(238, 255, 0);
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: black;
+}
+
+.qcount{
+  color: brown;
+  margin: 5px;
+
+}
+
+.app{
+  align-items: center;
+  margin: 100px;
+  border: solid 5px black; 
+}
