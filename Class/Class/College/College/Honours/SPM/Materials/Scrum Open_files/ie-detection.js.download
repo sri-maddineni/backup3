@@ -1,0 +1,3 @@
+browserIsIE=navigator.userAgent.toUpperCase().indexOf("TRIDENT/")!=-1||navigator.userAgent.toUpperCase().indexOf("MSIE")!=-1;if(browserIsIE){let div=document.createElement('div');let browser_message=document.createTextNode('Your browser is not supported. Upgrade your browser here and try again: ')
+let link_message=document.createTextNode('Browse Happy');let a=document.createElement('a');a.href='https://browsehappy.com/';a.rel="nofollow";a.appendChild(link_message);div.appendChild(browser_message);div.appendChild(a)
+div.style.margin="50px 50px 50px 50px";setTimeout(function(){document.head.innerHTML='';document.body.innerHTML='';document.body.appendChild(div);window.document.execCommand('Stop');},40);}

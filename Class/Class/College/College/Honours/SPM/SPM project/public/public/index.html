@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('spmpng.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .textbox {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .submit-button {
+      background-color: #24292e;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #0366d6;
+    }
+
+    
+    #repositories {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #repositories li {
+      margin: 10px;
+    }
+
+    #repositories li a {
+      display: inline-block;
+      padding: 20px 30px;
+      background-color: #000000;
+      color: #fff748;
+      text-decoration: none;
+      border-radius: 4px;
+      min-width: 50px;
+      transition: background-color 0.3s;
+    }
+
+    #repositories li a:hover {
+      background-color: #0366d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tech on Tips</h1>
+    <div>
+        <input type="text" class="textbox" id="profileInput" placeholder="Enter GitHub profile name">
+        <button onclick="getRepositories()" class="submit-button">Get Repositories</button>
+      </div>
+      <div id="repositories"></div>
+    
+
+
+  </div>
+
+  <script>
+        
+            
+      // Function to fetch repositories for a GitHub user
+    function getRepositories() {
+      const username = document.getElementById('profileInput').value;
+
+      fetch(`https://api.github.com/users/${username}/repos`)
+        .then(response => response.json())
+        .then(data => {
+          const repositoriesDiv = document.getElementById('repositories');
+          repositoriesDiv.innerHTML = ''; // Clear previous content
+
+          // Loop through the repositories and create a list item for each
+          data.forEach(repo => {
+
+            const repoLink = document.createElement('a');
+            repoLink.href = repo.html_url;
+            repoLink.textContent = repo.name;
+            repoLink.target="_blank";
+            const listItem = document.createElement('li');
+            listItem.appendChild(repoLink);
+
+            repositoriesDiv.appendChild(listItem);
+          });
+        })
+        .catch(error => console.log(error));
+    }
+  </script>
+</body>
+</html>

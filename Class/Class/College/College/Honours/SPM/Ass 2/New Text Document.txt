@@ -1,0 +1,48 @@
+Test Case Automation Document:
+
+1. Test Case: User login with valid username
+   Steps:
+   1. Launch the web browser and navigate to the URL 'https://sri-maddineni.github.io/itkonnects.gitrepos.com/'.
+   2. Enter the username 'sri' into the input field.
+   3. Click on the button.
+   4. Verify that an alert message with the text 'Test case 1 user name: sri(some unknown) : passed.' is displayed.
+   5. Wait for 2 seconds.
+   6. Clear the input field.
+   7. Close the alert.
+   
+2. Test Case: User login with valid username (known user)
+   Steps:
+   1. Launch the web browser and navigate to the URL 'https://sri-maddineni.github.io/itkonnects.gitrepos.com/'.
+   2. Enter the username 'sri-maddineni' into the input field.
+   3. Click on the button.
+   4. Verify that an alert message with the text 'Test case 1 user name: my username:sri-maddineni : passed.' is displayed.
+   5. Wait for 2 seconds.
+   6. Clear the input field.
+   7. Close the alert.
+
+3. Test Case: User login with invalid username (no repos)
+   Steps:
+   1. Launch the web browser and navigate to the URL 'https://sri-maddineni.github.io/itkonnects.gitrepos.com/'.
+   2. Enter the username 'kattaavinash' into the input field.
+   3. Click on the button.
+   4. Verify that an alert message with the text 'Test case: with no repos : passed.' is displayed.
+   5. Wait for 2 seconds.
+   6. Clear the input field.
+   7. Close the alert.
+
+4. Test Case: Verify clearing the input field
+   Steps:
+   1. Launch the web browser and navigate to the URL 'https://sri-maddineni.github.io/itkonnects.gitrepos.com/'.
+   2. Enter any username into the input field.
+   3. Click on the button.
+   4. Wait for 2 seconds.
+   5. Verify that the input field is cleared.
+
+5. Test Case: Verify closing the browser
+   Steps:
+   1. Launch the web browser and navigate to the URL 'https://sri-maddineni.github.io/itkonnects.gitrepos.com/'.
+   2. Wait for 2 seconds.
+   3. Close the browser window.
+   4. Verify that the browser window is closed.
+
+Note: The above test cases assume the functionality and behavior of the web application as described in the provided code. Please make sure to update the test cases based on the actual requirements and behavior of the application being tested.

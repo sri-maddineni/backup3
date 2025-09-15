@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitRepos</title>
+  <link rel="icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/gitrepo-a8c03.appspot.com/o/images%20and%20icons%2FRounded.png?alt=media&token=69f0434c-d6c7-409d-9326-b356d9e8761c">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Hotjar Tracking Code for my site -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3574423,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  <style>
+
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://firebasestorage.googleapis.com/v0/b/gitrepo-a8c03.appspot.com/o/images%20and%20icons%2Fspmpng.png?alt=media&token=68811ec1-e4ef-40d4-8b28-d1add957f6ad') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .textbox {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .submit-button {
+      background-color: #24292e;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #0366d6;
+    }
+
+    
+    #repositories {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #repositories li {
+      margin: 10px;
+    }
+
+    #repositories li a {
+      display: inline-block;
+      padding: 20px 30px;
+      background-color: #000000;
+      color: #fff748;
+      text-decoration: none;
+      border-radius: 4px;
+      min-width: 50px;
+      transition: background-color 0.3s;
+    }
+
+    #repositories li a:hover {
+      background-color: #0366d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tech on Tips</h1>
+    <div>
+        <input type="text" class="textbox" id="profileInput" placeholder="Enter GitHub profile name">
+        <button onclick="getRepositories()" class="submit-button">Get Repositories</button>
+      </div>
+      <div id="repositories"></div>
+    
+
+
+  </div>
+
+  <script>
+        
+            
+      // Function to fetch repositories for a GitHub user
+    function getRepositories() {
+      const username = document.getElementById('profileInput').value;
+
+      fetch(`https://api.github.com/users/${username}/repos`)
+        .then(response => response.json())
+        .then(data => {
+          const repositoriesDiv = document.getElementById('repositories');
+          repositoriesDiv.innerHTML = ''; // Clear previous content
+
+          // Loop through the repositories and create a list item for each
+          data.forEach(repo => {
+
+            const repoLink = document.createElement('a');
+            repoLink.href = repo.html_url;
+            repoLink.textContent = repo.name;
+            repoLink.target="_blank";
+            const listItem = document.createElement('li');
+            listItem.appendChild(repoLink);
+
+            repositoriesDiv.appendChild(listItem);
+          });
+        })
+        .catch(error => console.log(error));
+    }
+  </script>
+</body>
+</html>
