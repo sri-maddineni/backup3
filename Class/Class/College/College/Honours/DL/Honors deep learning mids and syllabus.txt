@@ -1,0 +1,95 @@
+Unit 1
+
+Artificial Neural Networks: Perceptron Learning algorithm, Feedforward neural networks, activation
+functions, backpropagation algorithm, loss functions, Gradient Descent - Stochastic Gradient Descent
+(SGD), Mini Batch Stochastic Gradient Descent (MB-SGD), Optimization methods - SGD with
+momentum, Adaptive Gradient (AdaGrad), RMSprop, Adam, Regularization - L2 regularization, Ll
+regularization and dropout. Implementation of ANN using TensorFlow.
+
+
+UNIT - 2
+
+Convolutional Neural Networks: Convolution, filters, stride, padding, feature maps, Architecture of CNNs - input layer, convolutional layers, activation functions, pooling layers, fully connected layers,
+output layer, training, pre-trained CNN models, transfer learning, image classification. TensorfFow implementation.
+
+
+UNIT - 3
+
+Sequence Models: Introduction to Sequence Modeling, word embeddings, Recurrent Neural Networks
+(RNNs) - Basic architecture of RNNs, Language model and sequence generation, Sentiment analysis,
+Vanishing and exploding gradient problems in RNNs, Long Short-Term Memory (LSTM) and Gated
+Recurrent Unit (GRU) architectures to address the vanishing gradient problem, Training RNNs.
+
+
+UNIT - 4
+
+Generative Models: Autoencoders, Architecture and training of autoencoders for unsupervised
+representation learning, Variants of autoencoders - Denoising autoencoders, sparse autoencoders, and
+contractive autoencoders, Variational Autoencoders (VAEs), The encoder-decoder framework and the
+reparameterization, The role of the latent space in VAEs for generating new samples, Generative
+Adversarial Networks (GANs) - Understanding the GAN architecture with generator and discriminator
+networks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Comparison of Representation Power:
+
+a) Compare the representation power of a Single Layer Perceptron to that of a Feed Forward Neural Network. 
+
+b)Compare perceptron with Sigmoid.
+
+3. Comparison of Gradient Descent Algorithms:
+
+a) Compare the following Gradient:
+i. Batch Gradient Descent
+ii. Stochastic Gradient Descent
+
+b) Compare the following Gradient:
+i. Mini Batch Gradient Descent
+ii. Momentum Based (Gradient Descent)
+iii. Nesterov Accelerated Gradient Descent
+
+4. Comparison of Neural Network Architectures:
+
+a) Compare Convolutional Neural Network with Feed Forward Neural Network.
+b) Describe the GoogLeNet architecture.
+OR
+Compare LeNet with AlexNet.
+c) Compare VGGNet and ResNet.
+
+
+
+
+2. Give one example for a Sequence learning problem.
+Write the characteristics of Sequence models.
+What is the exploding gradient problem?
+What is the vanishing gradient problem?
+What is Transliteration?
+What is an Autoencoder?
+Give one application of an Autoencoder.
+
+C.NIT -1
+Write about Recurrent Neural Networks along with their advantages and disadvantages.
+(OR)
+Write about Long Short-Term Memory Network.
+
+UNIT - 11
+How to model a Machine Translation problem using Encoder-Decoder paradigm?
+(OR)
+How to model a Language Question Answering problem using Encoder-Decoder paradigm?
+
+Assignment — II (45 minutes)
+1. How to model an image caption using Encoder-Decoder paradigm?
+(If the digit in the units place of your ID number is even)
+2. How to model a textual entailment problem using Encoder-Decoder paradigm?
+(If the digit in the units place of your ID number is odd)
