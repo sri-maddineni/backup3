@@ -1,0 +1,17 @@
+ec2-user
+43.205.139.214
+
+sudo su to back come
+
+sudo dnf install java-17-amazon-corretto-devel
+
+43.205.139.214
+
+4db9fae4673a466c9d0e305623d600e6
+
+
+http://43.205.139.214:8080/
+
+sri-maddineni
+srihari.maddineni.no1@gmail.com
+SRIHARI MADDINENI

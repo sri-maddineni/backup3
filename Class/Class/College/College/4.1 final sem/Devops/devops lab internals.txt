@@ -1,0 +1,147 @@
+CI:
+
+instance creation
+
+commands:
+1. sudo yum install java-11-amazon-corretto
+
+move to root:
+2. sudo su -
+
+install jenkins
+3.sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo  
+paste the link also
+(sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo)
+
+for public key error
+
+4.sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key  
+
+(sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key) 
+
+
+install jenkins
+
+5.sudo yum install jenkins
+
+6.sudo cat /var/lib/jenkins/secrets/initialAdminPassword   (Copy the initial password)
+
+password:
+2a87617f0c7a4b408c4d90babf2f93ed
+
+add inbound rules:
+security groups  rules 
+port 8080
+value 0.0.0.0./0
+
+copy public ip 
+
+13.126.189.70
+
+paste pasword and start jenkins in local browser:
+
+install git also in ec2 instance
+
+7.sudo yum install git -y
+
+jenkins is now installed:
+
+-----------------------------------------------------------------------------------
+
+
+GITHUB:-
+
+1.sudo yum install git -y
+
+2.Plugins - Git integration
+
+3.Tools 
+    Git installation-
+      Name - Git
+
+
+
+MAVEN:-
+
+1.cd /opt
+
+2.sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz -O apache-maven-3.9.5-bin.tar.gz
+
+3.sudo tar -zxvf apache-maven-3.9.5-bin.tar.gz (extract)
+
+4.sudo mv apache-maven-3.9.5 maven
+
+5.sudo su -
+
+6.cd ~
+
+7.vi ~/.bash_profile
+
+
+8. M2_HOME=/opt/maven              
+   M2=/opt/maven/bin
+   PATH=$PATH:$M2_HOME:$M2
+
+:wk for exit in bash command ec2
+
+
+9. source ~/.bash_profile
+
+10.mvn -v
+
+11.Plugins - maven integration plugin install
+
+12. In tools:-
+       JDK installations-
+           Name - java-11
+           JAVA_HOME - /usr/lib/jvm/java-11-amazon-corretto.x86_64
+
+
+       Maven installations-
+           Name - maven-3.9.5
+           MAVEN_HOME - /opt/maven
+
+
+
+For git repo use this dummy link -
+1. https://github.com/GeorgeBaidooJr9/hello-world
+2. https://github.com/yankils/hello-world
+
+
+
+
+___________________________________________________________________________
+
+git clone <repository_url>
+git init
+git status
+git add <file(s)>
+git commit -m "Commit message"
+git push origin <branch_name>
+git pull origin <branch_name>
+git branch <branch_name>
+git checkout <branch_name>
+git checkout -b <new_branch_name>
+git merge <branch_name>
+git log
+git checkout -- <file(s)>
+git reset HEAD <file(s)>
+git reset --soft HEAD^
+git reset --hard HEAD^
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+
+			-------------------------------------------------------------
+
+
+To work with GitHub remote repositories, start by cloning a repository using git clone <repository_url>. After making changes locally, use git add <file(s)> to stage changes, followed by git commit -m "Commit message" to commit them. Push changes to the remote repository with git push origin <branch_name>. To sync with remote changes, pull using git pull origin <branch_name>. Create a new branch with git branch <branch_name> and switch to it with git checkout <branch_name> or git switch <branch_name>. Merge branches using git merge <branch_name>. View commit history with git log. To contribute to an existing repository, fork it on GitHub, clone your fork, and create a pull request. Configure global user information with git config. Use git remote -v to view remote repositories. These commands facilitate collaboration and version control in GitHub repositories.
+
+
+
+
+
+
+
+
+
