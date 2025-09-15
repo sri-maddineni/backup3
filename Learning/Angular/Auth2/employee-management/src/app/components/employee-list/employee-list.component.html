@@ -1,0 +1,35 @@
+<div class="employee-list-container">
+    <h3>Employee List</h3>
+
+    <div class="table-responsive" *ngIf="employees.length > 0">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Position</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{ employee.name }}</td>
+                    <td>{{ employee.email }}</td>
+                    <td>{{ employee.position }}</td>
+                    <td>
+                        <button class="edit-btn" (click)="onEditEmployee(employee)">
+                            Edit
+                        </button>
+                        <button class="delete-btn" (click)="deleteEmployee(employee.id)">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="no-employees" *ngIf="employees.length === 0">
+        <p>No employees found. Add some employees using the form above.</p>
+    </div>
+</div>

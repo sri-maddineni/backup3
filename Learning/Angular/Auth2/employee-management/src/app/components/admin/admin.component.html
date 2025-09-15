@@ -1,0 +1,15 @@
+<div class="admin-container">
+    <header class="admin-header">
+        <h1>Employee Management System</h1>
+        <div class="admin-info">
+            <span>Welcome, Admin</span>
+            <button class="logout-btn" (click)="logout()">Logout</button>
+        </div>
+    </header>
+
+    <main class="admin-content">
+        <app-employee-form [employeeToEdit]="employeeToEdit" (formSubmitted)="onEmployeeFormSubmitted()">
+        </app-employee-form>
+        <app-employee-list (editEmployee)="onEditEmployee($event)"></app-employee-list>
+    </main>
+</div>

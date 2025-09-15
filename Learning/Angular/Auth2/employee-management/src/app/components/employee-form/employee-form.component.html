@@ -1,0 +1,36 @@
+<div class="form-container">
+    <h3>{{ employeeToEdit ? 'Edit Employee' : 'Add New Employee' }}</h3>
+    <form (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" [(ngModel)]="employee.name" required
+                placeholder="Enter employee name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" [(ngModel)]="employee.email" required
+                placeholder="Enter employee email">
+        </div>
+
+        <div class="form-group">
+            <label for="position">Position</label>
+            <input type="text" id="position" name="position" [(ngModel)]="employee.position" required
+                placeholder="Enter employee position">
+        </div>
+
+        <div class="error-message" *ngIf="errorMessage">
+            {{ errorMessage }}
+        </div>
+
+        <div class="success-message" *ngIf="successMessage">
+            {{ successMessage }}
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" [disabled]="!employeeForm.form.valid">{{ employeeToEdit ? 'Update Employee' : 'Add
+                Employee' }}</button>
+            <button type="button" class="cancel-btn" *ngIf="employeeToEdit" (click)="onCancelEdit()">Cancel</button>
+        </div>
+    </form>
+</div>
