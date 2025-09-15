@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>js demo 2</title>
+	</head>
+	<body>
+	<script>
+		function student(n,r){
+			this.name=n;
+			this.roll=r;
+			
+			this.display=function()
+			{
+				document.write(this.name,this.roll);
+			}
+		
+		}
+		
+		var s2=new student("apple",1);
+		s2.display()
+		
+		var s3=new student("orange",3);
+		s3.display()
+		
+		
+		
+	</script>
+		<h1>hello world</h1>
+	</body>
+</html>

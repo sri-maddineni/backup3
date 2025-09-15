@@ -1,0 +1,27 @@
+/*style sheet for sample.html*/
+*{margin:0;}
+body
+{
+    color:red;
+    background-color:rgb(144, 238, 238);
+    font-family:sans-serif;
+}
+h1{font-family:18pt;}
+p{font-size:12pt;}
+table{
+    background-color:yellow;
+    border-color:green;
+    border-width:2px;
+    border-style:solid;
+}
+th{
+    background-color:rgb(34, 255, 0);
+    font-weight:bold;
+    padding:3px;
+}
+td{padding:3px;}
+td.code
+{
+    font-weight:bold;
+    font-family:sans-serif;
+}

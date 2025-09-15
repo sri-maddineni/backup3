@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+
+    <script>
+        function mo()
+        {
+            document.getElementById("m1").style.background="red";
+
+        }
+
+        function me(){
+            document.getElementById("m2").style.color="blue";
+        }
+
+        function ml(i){
+            i.height=200;
+            i.width=200;
+            
+        }
+
+        function db()
+        {
+            document.getElementById("m4").style.border="solid 2px red";
+        }
+
+        function od(){
+            document.getElementById("m5").style.color="cyan"
+        }
+
+        function oc()
+        {
+            document.getElementById("m6").style.fontSize="30px";
+        }
+
+        function Wheel()
+   {
+         document.getElementById("wh").style.fontsize="40px";
+   }
+
+        
+
+
+    </script>
+</head>
+<body>
+    <p id="m1" onmouseover="mo()">ON MOUSE OVER</p>
+
+    <p id="m2" onmouseenter="me()">ON MOUSE ENTER</p>
+
+    <img id="m3" onmouseleave="ml(this)" src="image.jpg" alt="hello">
+
+    <p id="m4" ondblclick="db()">ON DOUBLE CLICK</p>
+
+    <button id="m5" ondrag="od()">ON DRAG</button>
+
+    <p id="m6" onclick="oc()" onmousewheel="Wheel()">ON CLICK</p>
+    
+    
+</body>
+</html>

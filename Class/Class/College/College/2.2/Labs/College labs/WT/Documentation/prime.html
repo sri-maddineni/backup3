@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime</title>
+
+    <script>
+       function sub()
+       {
+        var arr=[]
+        
+        var x=document.getElementById("num").value;
+        
+        for(let i=1;i<=x;i++)
+        {
+            if(x%i==0)
+            {
+                arr.push(i);
+            }
+            else{ 
+            }
+        }
+        if(arr.length==2)
+        {
+            document.write("<br>factors are : "+arr);
+            document.write("<br>prime")
+       }
+       else{
+        document.write("<br>factors are : "+arr);
+           document.write("<br>not a prime")
+       }
+    }
+    </script>
+</head>
+<body>
+
+    Enter number: <input type="number" id="num">
+    <button onclick="sub()">submit</button>
+    <p id="it"></p>
+    
+</body>
+</html>

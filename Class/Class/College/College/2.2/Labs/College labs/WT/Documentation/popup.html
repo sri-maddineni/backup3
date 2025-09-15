@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demonstrate Popup boxes</title>
+        <script type="text/javascript">
+            function al(){
+                alert("This is alert msge as u clicked on alert box");
+            }
+            function cnf(){
+                confirm("Are you sure u want to continue?");
+            }
+            function pro(){
+                var n=prompt("plz enter ur name");
+                document.getElementById("pmsg").innerHTML="your name is :"+n;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Dempnstrate Popup boxes</h1>
+        <button onClick="al()">Alertbox</button><br><br>
+        <button onClick="cnf()">confirmbox</button><br><br>
+        <button onClick="pro()">promptbox</button>
+        <p id="pmsg"></p>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Window object</title>
+    </head>
+    <body>
+        <h2>Frames</h2>
+        <iframe src="popup.html" width="200" height="200"></iframe>
+        <iframe src="mouse events.html" width="200" height="200"></iframe>
+        <iframe src="" width="200" height="200"></iframe>
+        <h2>window object methods</h2>
+        <button id="but1" onclick="win=window.open('tags.html')">Open Window</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="but1" onclick="win.close()">close Window</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="but1" onclick="window.alert('Alert Message')">Alert</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="but1" onclick="window.prompt('prompt Message')">Prompt</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="but1" onclick="window.confirm('confirm message')">confirm</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="but1" onclick="win.moveBy('100,100')">Move Window</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <h2>window object properties</h2>
+        <script type="text/javascript">
+            document.write("Number of Frames Used are:"+window.length);
+            window.frames[2].location="tags.html";
+            document.write("<br><u>Innerheight:</u> height of the windows content area(viewport)including scrollbars:"+window.innerHeight);
+            document.write("<br><u>Innerwidth:</u> width of the windows content area(viewport)including scrollbars:"+window.innerWidth);
+            document.write("<br><u>outerheight:</u> height of the browser window,including toolbars/scrollbars:"+window.outerHeight);
+            document.write("<br><u>outerwidth:</u> width of the browser window,including toolbars/scrollbars:"+window.outerWidtht);
+        </script>
+    </body>
+</html>

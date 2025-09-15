@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>mouse events</title>
+    <script type="text/javascript">
+    function MouseClick()
+    {
+      document.getElementById("cont").innerHTML="you clicked";
+    }
+    function Mousedbclick()
+    {
+      document.getElementById("cont").innerHTML="you db clicked";
+  }
+  function Mousedown()
+    {
+      document.getElementById("demo").style.color="red";
+  }
+  function MouseOver(img)
+  {
+    img.style.width="200";
+    img.style.height="200";
+   }
+   function Mouseout(img)
+  {
+    img.style.width="100";
+    img.style.height="100";
+   }
+   function MouseMove(e)
+   {
+     var x=e.client-x;
+     var y=e.client-y;
+     document.getElementById("cont").innerHTML="coord are:"+x+""+y+";
+    }
+   function Wheel()
+   {
+         document.getElementById("wh").style.fontsize="40px";
+   }
+   </script>
+   <style type="text/css">
+    #logo{border:2px solid red;}
+    </style>
+ </head>
+ <body>
+  <h3>mouse events</h3>
+  <button onclick="MouseClick()" ondbclick="Mousedbclick()">click here</button>
+   <p id="demo" onmousedown="Mousedown()" onmouseup="Mouseup()">click here to change</p>
+      <img src="image.jpg" onmouseover="Mouseover(this)" onmouseout="Mouseout(this)">
+      <img src="image.jpg" id="logo" onmousemove="MouseMove(event)">
+   <p id="wh" onmousewheel="Wheel()">this is para</p>
+   <p id="cont"></p>
+ </body>
+</html>

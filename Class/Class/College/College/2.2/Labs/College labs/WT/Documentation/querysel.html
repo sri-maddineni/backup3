@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>query selector</title>
+            <script type="text/javascript">
+                function qsel()
+                { document.querySelector("p").style.background="green"; }
+
+                function qselall()
+                {   
+                    list=document.querySelectorAll("p");
+                    for(var i=0;i<list.length;i++)
+                    {
+                        list[i].style.background="red";
+                    }
+                }
+            </script>
+    </head>
+    <body>
+        <p>My paragraph1</p>
+        <p>My paragraph2</p>
+        <p>My paragraph3</p>
+        <p>My paragraph4</p>
+        <p>My paragraph5</p>
+        <button onclick="qsel()">selector</button>
+        <button onclick="qselall()">selector All</button>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE student
+   [
+	<!ELEMENT student (name,regd,address)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT regd EMPTY>
+	<!ATTLIST regd id CDATA "507">
+	<!ELEMENT address (dno,city,street)>
+	<!ELEMENT dno (#PCDATA)>
+	<!ELEMENT city (#PCDATA)>
+	<!ELEMENT street (#PCDATA)>
+   ]
+>
+<student>
+	<name>sri</name>
+	<regd id="507"/>
+	<address>
+		<dno>1-49</dno>
+		<city>Hyderabad</city>
+		<street>kukatpally</street>
+	</address>
+</student>

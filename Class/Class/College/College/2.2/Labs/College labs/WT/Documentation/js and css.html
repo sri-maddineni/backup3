@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript</title>
+
+
+        <script type="text/javascript">
+            function mouseonclick1(){
+                document.getElementById("p1").style.background="red";
+            }
+            function mouseonclick2(){
+                document.getElementById("p2").style.color="blue";
+            }
+
+            function start(){
+                document.getElementById("b1").style.background="black";
+                document.getElementById("b1").style.color="white";
+                document.getElementById("b1").innerHTML="HIDE";
+                document.getElementById("p5").innerHTML="Game started time : "+Date();
+                //document.getElementById("p3").innerHTML="Read the following instructions:"
+                document.getElementById("links").style.visibility="visible";
+                var s="Hello players: This is a game where you can learn all the stuff related to css"
+                //document.getElementById("p4").innerHTML=s;
+            }
+
+            const btn=document.getElementById("links");
+            const targetdiv=document.getElementById("b1");
+
+            btn.onclick=function(){
+                
+                 if (targetDiv.style.display !== "none") {
+                 targetDiv.style.display = "none";
+                 } else {
+                  targetDiv.style.display = "block";
+             }
+            };
+                
+            
+            
+
+            function enlarge(i){
+                i.style.width="500px";
+				i.style.height="500px";
+
+            }
+            function delarge(i){
+                i.style.width="100px";
+                i.style.height="100px";
+            }
+
+        </script>
+
+
+    </head>
+
+
+
+    <body style="background-color:floralwhite;">
+        <h1 style="text-align: center;">Javascript demonstration</h1>
+        <p style="text-align: center;">Hello this is a page which demonstrates javascript</p>
+
+        <!--
+            <p id="p1" onclick="mouseonclick1()">click to get background</p>
+        <p id="p2" onclick="mouseonclick2()">click to change colour of text</p>
+
+		
+		
+       
+        -->
+
+		
+		
+        <button id="b1" onclick="start()" style="border:solid 3px rgb(219, 150, 11); background: rgb(0, 255, 191); width: 250px; height: 100px; margin-left: 42%; font-size: larger;">
+            SHOW
+        </button>
+        <b> <p id="p5" onclick="start()" style="text-align: center;"></p></b>
+        <u><p id="p3" style="font-size: larger;"></p></u>
+        <p id="p4" onclick="start()" style="font-size: larger;"></p>
+
+		
+		
+        
+		<table id="links"  border="1" style="margin-left: 25%; visibility:hidden;">
+                <tr style="padding: 25%;">
+                    <td style="text-align: center;">google</td>
+                    <td style="text-align: center;">amazon</td>
+                    <td style="text-align: center;">flipkart</td>
+                </tr>
+                <tr>
+                    <td style="padding:20px" onmouseover="enlarge(this)" onmouseout="delarge(this)"><img src="google.jpg" alt=""></td>
+                    <td style="padding:20px" onmouseover="enlarge(this)" onmouseout="delarge(this)"><img src="amazon.png" alt=""></td>
+                    <td style="padding:20px" onmouseover="enlarge(this)" onmouseout="delarge(this)"><img src="flipkart.jpg" alt=""></td>
+                </tr>
+        </table>
+            
+            
+        
+
+    </body>
+
+</html>

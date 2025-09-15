@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biggest 3</title>
+    <script>
+       function subi(){
+            var x=document.getElementById("n1").value;
+            var y=document.getElementById("n2").value;
+            var z=document.getElementById("n3").value;
+            var arr=[x,y,z]
+            var maxi=x
+            
+            for(let i=0;i<arr.length;i++)
+            {
+                if (arr[i]>maxi)
+                {
+                    maxi=arr[i]
+                    
+                }
+            }
+            document.write(maxi,"<br>")
+            document.getElementById("ma").innerHTML=maxi;
+        }
+    </script>
+</head>
+<body>
+    enter num 1:<input type="number" id="n1"><br><br>
+    enter num 2:<input type="number" id="n2"><br><br>
+    enter num 3:<input type="number" id="n3"><br><br>
+    <button id="sub" onclick="subi()">submit</button>
+    <p id="ma">hello</p>
+    
+</body>
+</html>

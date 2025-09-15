@@ -1,0 +1,22 @@
+4th unit
+---------------------------------
+
+io port programming
+addressing modes
+arithmetic logic single bit instructions and programming
+programing timer counter
+interrupts programing
+
+
++++++++++++++++++++++++++++++++++++++++++++
+
+3rd unit
+-------------------------------------------
+
+
+interfacing microprocessor to keyboard
+alphanumeric keys
+ pic controller
+dma
+architecture
+assembly language loop call jump

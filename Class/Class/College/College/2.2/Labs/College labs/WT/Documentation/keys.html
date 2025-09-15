@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Key events</title>
+	</head>
+	<body>
+		<script>
+			function kd()
+			{alert("key down");}
+			
+			function ku()
+			{ alert("key up happened"); }
+			
+			function kp()
+			{ alert("key pressed"); }
+		
+		</script>
+		
+		key down: <input type="text"  onkeydown=kd()><br><br>
+		key up  : <input type="text" onkeyup=ku()><br><br>
+		key press: <input type="text" onkeypress=kp()><br><br>
+	</body>
+</html>

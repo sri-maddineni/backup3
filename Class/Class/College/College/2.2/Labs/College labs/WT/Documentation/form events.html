@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Form events</title>
+		<script>
+			function osu(){
+				confirm("Are you sure you want to submit"); }
+			function oi(){
+				alert("Invalid submission"); }
+			function ofo(){
+				document.getElementById("f").style.background="cyan"; }
+			function or(){
+				document.getElementById("p").innerHTML="Form reset done!"; }
+			function ob(){
+				document.getElementById("f").style.background="red"; }
+			function os(){
+				document.getElementById("p").innerHTML="You selected the content of input field"; }
+			function oc(){
+				document.getElementById("p").innerHTML="You changed the content of input field"; }
+		</script>
+	</head>
+	<body>
+		<form action="" onsubmit="osu()"  onreset="or()"   required>
+			name : <input type="email" id="f" onfocus="ofo()" onblur="ob()" onselect="os()" onchange="oc()" oninvalid="oi()"  >
+			<input type="submit"> &nbsp; <input type="reset" > 
+		</form>
+		
+		<h3 id="p" ></h3>
+	</body>
+</html>

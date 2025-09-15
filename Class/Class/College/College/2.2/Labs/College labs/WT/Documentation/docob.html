@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Document Object</title>
+    </head>
+    <body>
+        <h2>Images</h2>
+        Image 1:<img id ="imgl" src="bec logo.png" >
+        Image 2:<img id ="img2" src="image.jpg" >
+        <h2>Links</h2>
+        <a id="link1" href="mouse events.html">Pagel</a>
+        <a id ="link2" href="form events.html">Page2</a>
+        <h2>Docuemnt object methods</h2>
+        <button onclick="open_doc()">Open Docuemnt</button>
+        <script type="text/javascript">
+            document.write("<h2>Document object collection</h2>");
+            document.write("Number of images:"+document.images.length);
+            document.write("<br>Number of links:"+document.links.length);
+            document.write("<h2>Document object properties</h2>");
+            document.write("Title of docuemnt:"+document.title);
+            document.write("<br>URL of docuemnt:"+document.URL);
+            document.write("<br> state of docuemnt:"+document.readyState);
+            document.write("<br>lastmodified of docuemnt:"+document.lastModified);
+            function open_doc(){
+                var mywindow = window.open();
+                mywindow.document.open();
+                mywindow.document.write("<h1>Welcome to document</h1>");
+                mywindow.document.close();
+            }
+</script>
+</body>
+</html>

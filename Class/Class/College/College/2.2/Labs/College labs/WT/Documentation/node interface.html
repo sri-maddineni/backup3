@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>node interface</title>
+        <script type="text/javascript">
+            function create_node(){
+                var link=document.createElement("a");
+                link.setAttribute("id","li");
+                link.setAttribute("href","image.jpg");
+                link.setAttribute("width","100");
+                link.setAttribute("height","100");
+                text=document.createTextNode("my link\n");
+                link.appendChild(text);
+                document.body.appendChild(link);
+            }
+            function delete_node(){
+                child=document.getElementById("li");
+                document.body.removeChild(child);
+            }
+            function clone_node(){
+                link=document.getElementById("li");
+                c=link.cloneNode(true);
+                document.body.appendChild(c);
+            }
+            function insert_node(){
+                link=document.getElementById("li");
+                para=document.createElement("p");
+                para.setAttribute("id","p1");
+                text=document.createTextNode("my paragraph before link");
+                para.appendChild(text);
+                document.body.insertBefore(para,link);
+            }
+        </script>
+ </head>
+ <body>
+    <div id="d">
+        <h2>Node interface methods</h2>
+        <button onclick="create_node()">create link</button>
+        <button onclick="delete_node()">remove link</button>
+        <button onclick="clone_node()">clone link</button>
+        <button onclick="insert_node()">insert paragraph before link</button>
+    </div>
+ </body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student SYSTEM "extdtd.dtd">
+<student>
+	<name>apple</name>
+	<regd id="401"/>
+	<address>
+		<dno>1-49</dno>
+		<city>ongole</city>
+		<street>journalist vari street</street>
+	</address>
+</student>

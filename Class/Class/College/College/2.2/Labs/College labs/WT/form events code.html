@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>form events</title>
+     <script type="text/javascript">
+
+       function inpfocus()
+        {
+      document.getElementById("uname").style.background="orange";
+     }
+
+
+          function inpblur()
+        {
+      document.getElementById("uname").style.background="cyan";
+     }
+
+    /*function inpchange()
+        {
+      alert("you are trying to change the content");
+     }*/  
+        function inpselect()
+        {
+      alert("you are selected the content");
+     }
+
+
+     function inpinvalid()
+        {
+      document.getElementById("msg").innerHTML="you can't submit the form";
+     }
+
+
+     function inpsubmit()
+        {
+      alert("you are submitting the form");
+     }
+
+
+     function inpreset()
+        {
+      alert("you are reset the form");
+     }
+     
+     </script>
+  </head>
+  <body>
+    <h1>form events</h1>
+      <form onsubmit="inpsubmit()"
+        onreset="inpreset()">
+        Enter username:<input id="uname" type="text" oninvalid="inpinvalid()" required onselect="inpselect()" 
+        onchange="inpchange()"
+        onfocus="inpfocus()" 
+        onblur="inpblur()">
+    <br><br>
+   <input type="submit" value="submit">&nbsp;
+   <input type="reset" value="reset">
+   </form>
+
+
+   <p id="msg"></p>
+  </body>
+ </html>

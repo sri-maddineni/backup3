@@ -1,0 +1,8 @@
+<!ELEMENT student (name,regd,address)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT regd EMPTY>
+	<!ATTLIST regd id CDATA "401">
+	<!ELEMENT address (dno,city,street)>
+	<!ELEMENT dno (#PCDATA)>
+	<!ELEMENT city (#PCDATA)>
+	<!ELEMENT street (#PCDATA)>

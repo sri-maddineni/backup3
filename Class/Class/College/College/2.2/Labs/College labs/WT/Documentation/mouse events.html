@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+    <script type="text/javascript">
+        function mo(){
+            document.getElementById("m1").style.background="red";
+        }
+        function me(){
+            document.getElementById("m2").style.color="blue";
+        }
+        function ml(i){
+            i.height=200;
+            i.width=200;   
+        }
+        function db(){
+            document.getElementById("m4").style.border="solid 2px red";
+        }
+        function od(){
+            document.getElementById("m5").style.fontFamily="monospace"
+        }
+        function oc(){
+            document.getElementById("m6").style.background="blue";
+        }
+        function mm(){
+            alert("mouse moved over image")
+        }
+        function mout(){
+            alert("mouse out happened")
+        }
+    </script>
+</head>
+<body>
+    <p id="m1" onmouseover="mo()">ON MOUSE OVER</p>
+    <p id="m2" onmouseenter="me()">ON MOUSE ENTER</p>
+    <img id="m3" onmouseleave="ml(this)" src="image.jpg" alt="hello"><br>on mouseleave event<br>
+    <p id="m4" ondblclick="db()">ON DOUBLE CLICK</p>
+    <p id="m5" ondrag="od()">ON DRAG</p>
+    <p id="m6" onclick="oc()">ON CLICK</p>
+    <img id="m7" onmousemove="mm(this)" src="image.jpg" alt="hello"><br>on mouse move<br>
+    <img id="m8" onmouseout="mout()" src="image.jpg" alt="hello"><br>on mouseout <br>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE htm|>
+<html>
+    <head>
+        <title> Date objects</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var d1= new Date();
+            var d2=new Date(2000000);
+            var d3=new Date("july 08,2022");
+            var d4=new Date(2022,00,01);
+            var d5=new Date(2022,00,01,10,45,30);
+            document.write("<h2>Date object creation</h2>");
+            document.write("Empty Date object creation:"+d1);
+            document.write("<br>Date object with milliseconds:"+d2);
+            document.write("<br>Date object with string:"+d3);
+            document.write("<br>Date object with specified date:"+d4);
+            document.write(" <br> Date object with specified date & time:"+d5);
+            document.write("<h2>Date object methods</h2>");
+            document.write("Current Date:"+Date(d1.valueOf()));
+            document.write("<br>Day:"+d1.getDay());
+            document.write("<br>Date:"+d1.getDate());
+            document.write("<br>Month."+d1.getMonth());
+            document.write("<br>Year:"+d1.getFullYear());
+            document.write("<br>Hourse:"+d1.getHours());
+            document.write("<br>Minutes:"+d1.getMinutes());
+            document.write("<br>Seconds:"+d1.getSeconds());
+            document.write("<br>Milliseconds:"+d1.getMilliseconds());
+            document.write("<br>Time:"+Date(d1.getTime()));
+            document.write("<br>difference between UTC time and local time, in minutes:"+d1.getTimezoneOffset()); 
+            document.write("<br>Setting the Date:"+d1.setDate(10));
+            document.write("<br>getting the Date:"+d1.getDate());
+        </script>
+    </body>
+</html>

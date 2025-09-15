@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup boxes</title>
+
+    <script>
+        function al()
+        {
+            alert("This is an alert")
+        }
+        function cnfm(){
+            confirm("are you sure you want to confirm")
+        }
+        function pr(){
+            msg=prompt("enter a message")
+            
+            document.getElementById("h").innerHTML="your message is : "+msg;
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <button onclick="al()">alert</button>
+    <br><br>
+    <button onclick="cnfm()">confirm box</button>
+    <br><br>
+    <button onclick="pr()"> Prompt box</button>
+    <br><br>
+    <p id="h"></p>
+</body>
+</html>
